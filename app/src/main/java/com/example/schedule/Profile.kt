@@ -3,7 +3,7 @@ import android.os.Build
 import androidx.annotation.RequiresApi
 import java.time.DayOfWeek
 
-class Profile (private val name: String, private var salaryMonth: Double, private var posts: MutableList<Post>, private var baseSalary: Int){
+data class Profile (private val name: String, private var salaryMonth: Double, private var posts: MutableList<Post>, private var baseSalary: Int){
     public fun getName(): String {return name}
     public fun getSalary(): Double {return salaryMonth}
     public fun getPosts(): MutableList<Post> {return posts}
